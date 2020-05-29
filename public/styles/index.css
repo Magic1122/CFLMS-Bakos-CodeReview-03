@@ -59,12 +59,12 @@ body {
       color: #fff;
       font-size: 1.4rem; }
 
+@media (max-width: 810px) {
+  .main-header__banner {
+    display: none; } }
 @media (max-width: 580px) {
   .main-header img {
     display: inline-block; }
-
-  .main-header__banner {
-    display: none; }
 
   .main-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-foooter-nav__item {
     margin: 0 0.7rem; }
@@ -80,14 +80,14 @@ body {
     margin-top: 3.2rem; } }
 .insurance-calculator {
   position: relative;
-  height: 60rem;
-  background: url("../img/traffic-332857_1920.jpg") no-repeat fixed center; }
+  height: 61rem;
+  background: url("../img/traffic-332857_1920.jpg") no-repeat center/cover; }
   @media (max-width: 810px) {
     .insurance-calculator {
       height: 85rem; } }
   @media (max-width: 580px) {
     .insurance-calculator {
-      height: 90rem; } }
+      height: 100rem; } }
   .insurance-calculator .insurance-calculator__title {
     color: #fff;
     margin: 0;
@@ -100,9 +100,9 @@ body {
     margin: 0 auto;
     left: 0;
     right: 0;
-    max-width: 70%;
+    max-width: 90%;
     background-color: #CECECE;
-    opacity: 0.8;
+    opacity: 0.9;
     border: 2px #4f4f4f solid;
     border-radius: 2px; }
     @media (max-width: 580px) {
@@ -175,10 +175,11 @@ body {
     display: flex;
     justify-content: center;
     color: #19a63f;
-    font-size: 2.4rem; }
+    font-size: 1.8rem; }
     .insurance-calculator .insurance-calculator__result p {
       padding: 0 0 1.6rem 0;
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
 
 .insurance-motto {
   background-color: #CECECE;

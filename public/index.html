@@ -38,7 +38,7 @@
                       <br> 
                       with a custom quote
                   </h1>
-                  <form class="insurance-calculator__form">
+                  <form class="insurance-calculator__form" id="calculateForm">
                       <div class="insurance-calculator__form-name">
                           <label for="name">
                               Your name:
@@ -51,7 +51,7 @@
                             Age:
                         </label>
                         <br>
-                        <input type="number" placeholder="How old are you?" name="age" id="age" pattern="/[1-9][0-9]*/" required>
+                        <input type="number" placeholder="How old are you?" name="age" id="age" pattern="[1-9][0-9]*" required>
                       </div>
                       <div class="insurance-calculator__form-country">
                         <label for="country">
@@ -70,14 +70,14 @@
                             Horsepower of your car:
                         </label>
                         <br>
-                        <input type="text" placeholder="How strong is your car?" name="power" id="power" required>
+                        <input type="number" placeholder="How strong is your car?" name="power" id="power" required pattern="[1-9][0-9]*">
                       </div>
                       <div class="insurance-calculator__form-button">
                         <button type="submit">Calculate</button>
                       </div>
                   </form>
                   <div class="insurance-calculator__result">
-                      <p>Printed calculation goes here</p>
+                      <p id="insuranceResult">Your result will be shown here!</p>
                   </div>
               </div>
           </section>
@@ -152,6 +152,7 @@
       </footer>
 
 <body>
+    <script src="./scripts/insurance-app-functions.js"></script>
     <script src="./scripts/insurance-app.js"></script>
 </body>
 </html>

@@ -74,16 +74,19 @@
   }
 }
 
+@media (max-width: 810px) {
+  .main-header__banner {
+    display: none;
+  }
+
+}
+
 @media (max-width: 580px) {
 
   .main-header {
     img {
       display: inline-block;
     }
-  }
-
-  .main-header__banner {
-    display: none;
   }
 
   .main-nav__items .main-nav__item  {

@@ -4,13 +4,14 @@
 
 .insurance-calculator {
   position: relative;
-  height: 60rem;
-  background: url("../img/traffic-332857_1920.jpg") no-repeat fixed center;
+  height: 61rem;
+  background: url("../img/traffic-332857_1920.jpg") no-repeat center/cover;
+
   @media (max-width: 810px) {
       height: 85rem;
     }   
   @media (max-width: 580px) {
-      height: 90rem;
+      height: 100rem;
   }
 
   .insurance-calculator__title {
@@ -27,9 +28,9 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    max-width: 70%;
+    max-width: 90%;
     background-color: $grey;
-    opacity: 0.8;
+    opacity: 0.9;
     border: 2px darken($color: $grey, $amount: 50%) solid;
     border-radius: 2px;
 
@@ -142,11 +143,12 @@
     display: flex;
     justify-content: center;
     color: darken($color: $green, $amount: 15%);
-    font-size: $font-size-large;
+    font-size: $font-size-medium;
 
     p {
       padding: 0 0 $m-size 0;
       margin: 0;
+      text-align: center;
     }
   }
 }
