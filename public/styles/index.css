@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  /* It sets 1rem to 10px if the user is using the browser default settings, makes it easier to calculate with */ }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 0 auto; }
+
+.main-header {
+  width: 100%;
+  background: #FFF3F3;
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .main-header div {
+    margin: 0 1.4rem; }
+
+.main-nav__items, .main-footer .main-foooter-nav__items {
+  margin: 0;
+  padding: 0;
+  background: #8E1616;
+  list-style: none;
+  display: flex; }
+  .main-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-foooter-nav__item {
+    margin: 0 0 0 1.4rem; }
+  .main-nav__items .main-nav__item-link, .main-footer .main-foooter-nav__items .main-nav__item-link, .main-footer .main-foooter-nav__items .main-foooter-nav__item .main-footer-nav__link {
+    text-decoration: none;
+    color: #FFF3F3;
+    font-size: 1.8rem;
+    font-weight: bold; }
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  font-size: 2.4rem; }
+  .main-footer .main-foooter-nav__items {
+    background: #171717; }
+    .main-footer .main-foooter-nav__items .main-foooter-nav__item .main-footer-nav__link {
+      font-size: 1.4rem; }
+    .main-footer .main-foooter-nav__items .main-footer-logo {
+      display: flex;
+      justify-content: flex-end;
+      margin: 1.4rem; }
+  .main-footer .main-footer-logo {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.4rem; }
+  .main-footer .main-footer-credits {
+    display: flex;
+    justify-content: center; }
+    .main-footer .main-footer-credits p {
+      color: #fff;
+      font-size: 1.4rem; }
+
+@media (max-width: 480px) {
+  .main-header img {
+    display: inline-block; }
+
+  .main-header__banner {
+    display: none; }
+
+  .main-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-foooter-nav__item {
+    margin: 0 0.7rem; }
+
+  .main-header,
+  .main-nav__items,
+  .main-footer .main-foooter-nav__items,
+  .main-foooter-nav__items,
+  .main-footer .main-footer-logo {
+    justify-content: center; }
+
+  .main-footer {
+    margin-top: 3.2rem; } }
+.insurance-calculator {
+  position: relative;
+  height: 60rem;
+  background: url("../img/traffic-332857_1920.jpg") no-repeat fixed center; }
+  .insurance-calculator .insurance-calculator__title {
+    color: #fff;
+    margin: 0;
+    font-size: 4.8rem;
+    padding: 1.6rem; }
+  .insurance-calculator .insurance-calculator__area {
+    color: #171717;
+    position: absolute;
+    font-weight: bold;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 70%;
+    background-color: #CECECE;
+    opacity: 0.8;
+    border: 2px #4f4f4f solid;
+    border-radius: 2px; }
+  .insurance-calculator .insurance-calculator__area-title {
+    font-size: 3.6rem;
+    text-align: center; }
+  .insurance-calculator .insurance-calculator__form {
+    display: grid;
+    padding: 3.2rem 3.2rem 1.6rem 3.2rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    grid-template-areas: "name . age" "country . power" "button button button";
+    justify-items: center;
+    grid-row-gap: 3.2rem; }
+  .insurance-calculator input,
+  .insurance-calculator select,
+  .insurance-calculator label {
+    width: 100%;
+    font-size: 1.8rem; }
+  .insurance-calculator input,
+  .insurance-calculator select {
+    padding: 1.4rem; }
+  .insurance-calculator input:focus,
+  .insurance-calculator select:focus {
+    outline: none;
+    background: #defae5;
+    border-color: #2ddf5c; }
+  .insurance-calculator .insurance-calculator__form input.invalid,
+  .insurance-calculator .insurance-calculator__form select.invalid {
+    border-color: red !important;
+    background: #ff2727; }
+  .insurance-calculator button {
+    background-color: #169036;
+    color: #fff;
+    padding: 1.4rem 1.6rem;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+  .insurance-calculator button:hover,
+  .insurance-calculator button:active {
+    color: #169036;
+    background-color: #fff;
+    cursor: pointer; }
+  .insurance-calculator button:focus {
+    outline: none; }
+  .insurance-calculator .insurance-calculator__form-name {
+    grid-area: name;
+    width: 100%; }
+  .insurance-calculator .insurance-calculator__form-age {
+    grid-area: age;
+    width: 100%; }
+  .insurance-calculator .insurance-calculator__form-country {
+    grid-area: country;
+    width: 100%; }
+  .insurance-calculator .insurance-calculator__form-power {
+    grid-area: power;
+    width: 100%; }
+  .insurance-calculator .insurance-calculator__form-button {
+    grid-area: button; }
+  .insurance-calculator .insurance-calculator__result {
+    display: flex;
+    justify-content: center;
+    color: #19a63f;
+    font-size: 2.4rem; }
+    .insurance-calculator .insurance-calculator__result p {
+      padding: 0 0 1.6rem 0;
+      margin: 0; }
+
+.insurance-motto {
+  background-color: #CECECE;
+  text-align: center;
+  color: #171717;
+  font-weight: bold;
+  padding: 7.2rem 0 1.6rem 0; }
+  .insurance-motto h2 {
+    margin: 0;
+    font-size: 2.4rem; }
+
+.insurance-packages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4.8rem 0; }
+  .insurance-packages .insurance-package-plan {
+    padding: 1.4rem;
+    width: 25%;
+    border-top: 1px solid black;
+    box-shadow: 7px 7px 23px 3px rgba(0, 0, 0, 0.75); }
+  .insurance-packages .insurance-package-plan__title {
+    margin: 0;
+    color: #76B4E1;
+    font-size: 2.4rem; }
+  .insurance-packages .insurance-package-plan__subtitle {
+    margin: 0;
+    color: #CECECE;
+    font-size: 1.8rem; }
+  .insurance-packages .insurance-package-plan__features {
+    padding: 0; }
+  .insurance-packages .insurance-package-plan__feature {
+    list-style: none; }
+  .insurance-packages .insurance-package-plan__feature-symbol {
+    color: #2ddf5c; }
+  .insurance-packages .insurance-package-plan__benefits-title {
+    margin-bottom: 0;
+    font-size: 1.8rem; }
+  .insurance-packages .insurance-package-plan__benefits-detail {
+    margin: 0 0 0.7rem 0;
+    color: #CECECE; }
+
+/*# sourceMappingURL=index.css.map */

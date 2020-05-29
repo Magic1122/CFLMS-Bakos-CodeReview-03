@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>CodeReview 3</title>
 </head>
-    <header>
+    <header class="main-header">
         <div>
             <a href="index.html" class="main-header__logo">
               <img src="./img/logo.png" alt="insurance CF - Your favorite insurance company" />
@@ -21,19 +22,21 @@
     <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="index.html">Home</a>
+            <a class="main-nav__item-link" href="index.html">Home</a>
           </li>
           <li class="main-nav__item">
-            <a href="team.html">Team</a>
+            <a class="main-nav__item-link" href="team.html">Team</a>
           </li>
         </ul>
       </nav>
       <main class="content">
           <section class="insurance-calculator">
-              <h1>Car insurance</h1>
+              <h1 class="insurance-calculator__title">Car insurance</h1>
               <div class="insurance-calculator__area">
                   <h1 class="insurance-calculator__area-title">
-                      Great cover begins with a custom quote
+                      Great coverage begins
+                      <br> 
+                      with a custom quote
                   </h1>
                   <form class="insurance-calculator__form">
                       <div class="insurance-calculator__form-name">
@@ -41,21 +44,21 @@
                               Your name:
                           </label>
                           <br>
-                          <input type="text" placeholder="What is your name?" name="name" id="name">
+                          <input type="text" placeholder="What is your name?" name="name" id="name" required>
                       </div>
                       <div class="insurance-calculator__form-age">
                         <label for="age">
                             Age:
                         </label>
                         <br>
-                        <input type="text" placeholder="How old are you?" name="age" id="age">
+                        <input type="number" placeholder="How old are you?" name="age" id="age" pattern="/[1-9][0-9]*/" required>
                       </div>
                       <div class="insurance-calculator__form-country">
                         <label for="country">
                             Country:
                         </label>
                         <br>
-                        <select name="country" id="country">
+                        <select name="country" id="country" required>
                             <option value="">Choose your country</option>
                             <option value="austria">Austria</option>
                             <option value="greece">Greece</option>
@@ -67,9 +70,11 @@
                             Horsepower of your car:
                         </label>
                         <br>
-                        <input type="text" placeholder="How strong is your car?" name="power" id="power">
+                        <input type="text" placeholder="How strong is your car?" name="power" id="power" required>
                       </div>
-                      <button type="submit">Calculate</button>
+                      <div class="insurance-calculator__form-button">
+                        <button type="submit">Calculate</button>
+                      </div>
                   </form>
                   <div class="insurance-calculator__result">
                       <p>Printed calculation goes here</p>
@@ -82,7 +87,10 @@
               </h2>
               <p class="insurance-motto__paragraph">
                   Understanding your coverage options shouldn't be so hard.
-                  We'll guide you through available coverage types, starting with who and what is covered.
+                  <br>
+                  We'll guide you through available coverage types,
+                  <br>
+                  starting with who and what is covered.
               </p>
           </section>
           <section class="insurance-packages">
@@ -90,16 +98,16 @@
                 <h1 class="insurance-package-plan__title">What comes standard</h1>
                 <h2 class="insurance-package-plan__subtitle">The coverage you need</h2>
                 <ul class="insurance-package-plan__features">
-                    <li class="insurance-package-plan__feature">Bodily Unjury Liability</li>
-                    <li class="insurance-package-plan__feature">Property Damage</li>
-                    <li class="insurance-package-plan__feature">Medical Payments</li>
+                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Bodily Unjury Liability</li>
+                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Property Damage</li>
+                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Medical Payments</li>
                 </ul>
                 <div class="insurance-package-plan__benefits">
                     <h1 class="insurance-package-plan__benefits-title">
                         Benefits
                     </h1>
                     <p class="insurance-package-plan__benefits-detail">
-                        12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee
+                        12-month rate guarantee | 24/7 customer<br>service | Lifetime Repair Guarantee
                     </p>
                 </div>
             </article>
@@ -107,16 +115,16 @@
                 <h1 class="insurance-package-plan__title">Add-on protection & coverage</h1>
                 <h2 class="insurance-package-plan__subtitle">For more peace of mind</h2>
                 <ul class="insurance-package-plan__features">
-                    <li class="insurance-package-plan__feature">Better Car Replacement</li>
-                    <li class="insurance-package-plan__feature">Towing and Labor</li>
-                    <li class="insurance-package-plan__feature">Rental Car Coverage</li>
+                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Better Car Replacement</li>
+                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Towing and Labor</li>
+                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Rental Car Coverage</li>
                 </ul>
                 <div class="insurance-package-plan__benefits">
                     <h1 class="insurance-package-plan__benefits-title">
                         Earned Benefits
                     </h1>
                     <p class="insurance-package-plan__benefits-detail">
-                        Accident Forgiveness&#185; | New Car Replacement&#8482;
+                        Accident Forgiveness&#185; | New Car<br>Replacement&#8482;
                     </p>
                 </div>
             </article>
@@ -126,10 +134,10 @@
         <nav class="main-foooter-nav">
           <ul class="main-foooter-nav__items">
             <li class="main-foooter-nav__item">
-              <a href="index.html">Home</a>
+              <a class="main-footer-nav__link" href="index.html">Home</a>
             </li>
             <li class="main-foooter-nav__item">
-              <a href="team.html">Team</a>
+              <a class="main-footer-nav__link" href="team.html">Team</a>
             </li>
           </ul>
         </nav>

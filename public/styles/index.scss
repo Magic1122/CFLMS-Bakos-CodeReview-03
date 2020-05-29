@@ -1,0 +1,193 @@
+@import "./base/settings";
+@import "./base/base";
+@import "./partials/shared";
+
+.insurance-calculator {
+  position: relative;
+  height: 60rem;
+  background: url("../img/traffic-332857_1920.jpg") no-repeat fixed center;
+
+  .insurance-calculator__title {
+    color: $white;
+    margin: 0;
+    font-size: $font-size-large * 2;
+    padding: $m-size;
+  }
+
+  .insurance-calculator__area {
+    color: $black;
+    position: absolute;
+    font-weight: bold;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 70%;
+    background-color: $grey;
+    opacity: 0.8;
+    border: 2px darken($color: $grey, $amount: 50%) solid;
+    border-radius: 2px;
+  }
+
+  .insurance-calculator__area-title {
+    font-size: $font-size-large * 1.5;
+    text-align: center;
+  }
+
+  .insurance-calculator__form {
+    display: grid;
+    padding: $l-size $l-size $m-size $l-size;
+    grid-row-gap: $xs-size;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    grid-template-areas:
+      "name . age"
+      "country . power"
+      "button button button";
+    justify-items: center;
+    grid-row-gap: $l-size;
+  }
+
+  input,
+  select,
+  label {
+    width: 100%;
+    font-size: $font-size-medium;
+  }
+
+  input,
+  select {
+    padding: $s-size;
+  }
+
+  input:focus,
+  select:focus {
+    outline: none;
+    background: lighten($color: $green, $amount: 40%);
+    border-color: $green;
+  }
+
+  .insurance-calculator__form input.invalid,
+  .insurance-calculator__form select.invalid {
+    border-color: red !important;
+    background: darken($color: $light-rose, $amount: 40%);
+  }
+
+  button {
+      background-color: darken($color: $green, $amount: 20%);
+      color: $white;
+      padding: $s-size $m-size;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      font-size: $font-size-large;
+      font-weight: bold;
+  }
+
+  button:hover, 
+  button:active {
+      color: darken($color: $green, $amount: 20%);
+      background-color: $white;
+      cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  .insurance-calculator__form-name {
+    grid-area: name;
+    width: 100%;
+  }
+
+  .insurance-calculator__form-age {
+    grid-area: age;
+    width: 100%;
+  }
+
+  .insurance-calculator__form-country {
+    grid-area: country;
+    width: 100%;
+  }
+
+  .insurance-calculator__form-power {
+    grid-area: power;
+    width: 100%;
+  }
+
+  .insurance-calculator__form-button {
+    grid-area: button;
+  }
+
+  .insurance-calculator__result {
+      display: flex;
+      justify-content: center;
+      color: darken($color: $green, $amount: 15%);
+      font-size: $font-size-large;
+
+      p {
+        padding: 0 0 $m-size 0;
+        margin: 0;
+      }
+  }
+}
+
+.insurance-motto {
+    background-color: $grey;
+    text-align: center;
+    color: $black;
+    font-weight: bold;
+    padding: $xl-size * 1.5 0 $m-size 0;
+
+    h2 {
+        margin: 0;
+        font-size: $font-size-large;
+
+    }
+}
+
+.insurance-packages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: $xl-size 0;
+
+    .insurance-package-plan {
+        padding: $s-size;
+        width: 25%;
+        border-top: 1px solid black;
+        box-shadow: 7px 7px 23px 3px rgba(0,0,0,0.75);
+    }
+
+    .insurance-package-plan__title {
+        margin: 0;
+        color: $blue;
+        font-size: $font-size-large;
+    }
+
+    .insurance-package-plan__subtitle {
+        margin: 0;
+        color: $grey;
+        font-size: $font-size-medium;
+    }
+
+    .insurance-package-plan__features {
+        padding: 0;
+    }
+
+    .insurance-package-plan__feature {
+        list-style: none;
+    }
+
+    .insurance-package-plan__feature-symbol {
+        color: $green;
+    }
+
+    .insurance-package-plan__benefits-title {
+        margin-bottom: 0;
+        font-size: $font-size-medium;
+    }
+
+    .insurance-package-plan__benefits-detail {
+        margin: 0 0 $s-size/2 0;
+        color: $grey;
+    }
+}
