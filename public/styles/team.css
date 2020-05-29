@@ -110,13 +110,13 @@ main {
 
 .team-member__name {
   margin: 0.2rem;
-  color: #ff5454;
+  color: #ff8d8d;
   font-size: 4.8rem; }
 
 .team-member__subtitle {
   margin: 0;
   font-size: 1.8rem;
-  color: #ccc; }
+  color: #CECECE; }
 
 .team-member__subtitle a {
   color: inherit;

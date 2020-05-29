@@ -41,14 +41,14 @@ main {
 
 .team-member__name {
   margin: 0.2rem;
-  color: #ff5454;
+  color: darken($color: $light-rose, $amount: 20%);
   font-size: $font-size-large * 2;
 }
 
 .team-member__subtitle {
   margin: 0;
   font-size: $font-size-medium;
-  color: #ccc;
+  color: $grey;
 }
 
 .team-member__subtitle a {
