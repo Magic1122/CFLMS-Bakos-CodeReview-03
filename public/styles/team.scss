@@ -6,6 +6,10 @@ main {
   padding-top: $m-size;
 }
 
+.team-member {
+    cursor: pointer;
+}
+
 .team-member__image-container {
   width: 60%;
   max-width: 40rem;
@@ -41,7 +45,7 @@ main {
 
 .team-member__name {
   margin: 0.2rem;
-  color: darken($color: $light-rose, $amount: 20%);
+  color: darken($color: $light-rose, $amount: 40%);
   font-size: $font-size-large * 2;
 }
 
@@ -49,11 +53,6 @@ main {
   margin: 0;
   font-size: $font-size-medium;
   color: $grey;
-}
-
-.team-member__subtitle a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .team-member__subtitle a:hover,
