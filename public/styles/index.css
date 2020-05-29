@@ -59,7 +59,7 @@ body {
       color: #fff;
       font-size: 1.4rem; }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .main-header img {
     display: inline-block; }
 
@@ -82,6 +82,12 @@ body {
   position: relative;
   height: 60rem;
   background: url("../img/traffic-332857_1920.jpg") no-repeat fixed center; }
+  @media (max-width: 810px) {
+    .insurance-calculator {
+      height: 85rem; } }
+  @media (max-width: 580px) {
+    .insurance-calculator {
+      height: 90rem; } }
   .insurance-calculator .insurance-calculator__title {
     color: #fff;
     margin: 0;
@@ -99,6 +105,9 @@ body {
     opacity: 0.8;
     border: 2px #4f4f4f solid;
     border-radius: 2px; }
+    @media (max-width: 580px) {
+      .insurance-calculator .insurance-calculator__area {
+        max-width: 100%; } }
   .insurance-calculator .insurance-calculator__area-title {
     font-size: 3.6rem;
     text-align: center; }
@@ -110,6 +119,11 @@ body {
     grid-template-areas: "name . age" "country . power" "button button button";
     justify-items: center;
     grid-row-gap: 3.2rem; }
+    @media (max-width: 810px) {
+      .insurance-calculator .insurance-calculator__form {
+        /* grid-template-columns: 1r; */
+        grid-template-columns: 1fr;
+        grid-template-areas: "name" "age" "country" "power" "button"; } }
   .insurance-calculator input,
   .insurance-calculator select,
   .insurance-calculator label {
@@ -179,13 +193,22 @@ body {
 .insurance-packages {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
   margin: 4.8rem 0; }
+  @media (max-width: 580px) {
+    .insurance-packages {
+      display: block; } }
   .insurance-packages .insurance-package-plan {
     padding: 1.4rem;
     width: 25%;
     border-top: 1px solid black;
     box-shadow: 7px 7px 23px 3px rgba(0, 0, 0, 0.75); }
+    @media (max-width: 580px) {
+      .insurance-packages .insurance-package-plan {
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        text-align: center; } }
   .insurance-packages .insurance-package-plan__title {
     margin: 0;
     color: #76B4E1;

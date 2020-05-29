@@ -6,6 +6,12 @@
   position: relative;
   height: 60rem;
   background: url("../img/traffic-332857_1920.jpg") no-repeat fixed center;
+  @media (max-width: 810px) {
+      height: 85rem;
+    }   
+  @media (max-width: 580px) {
+      height: 90rem;
+  }
 
   .insurance-calculator__title {
     color: $white;
@@ -26,6 +32,10 @@
     opacity: 0.8;
     border: 2px darken($color: $grey, $amount: 50%) solid;
     border-radius: 2px;
+
+    @media (max-width: 580px) {
+        max-width: 100%;
+    }
   }
 
   .insurance-calculator__area-title {
@@ -44,6 +54,17 @@
       "button button button";
     justify-items: center;
     grid-row-gap: $l-size;
+
+    @media (max-width: 810px) {
+      /* grid-template-columns: 1r; */
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "name"
+        "age"
+        "country"
+        "power"
+        "button";
+    }
   }
 
   input,
@@ -72,21 +93,21 @@
   }
 
   button {
-      background-color: darken($color: $green, $amount: 20%);
-      color: $white;
-      padding: $s-size $m-size;
-      width: 100%;
-      border: none;
-      border-radius: 10px;
-      font-size: $font-size-large;
-      font-weight: bold;
+    background-color: darken($color: $green, $amount: 20%);
+    color: $white;
+    padding: $s-size $m-size;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: $font-size-large;
+    font-weight: bold;
   }
 
-  button:hover, 
+  button:hover,
   button:active {
-      color: darken($color: $green, $amount: 20%);
-      background-color: $white;
-      cursor: pointer;
+    color: darken($color: $green, $amount: 20%);
+    background-color: $white;
+    cursor: pointer;
   }
 
   button:focus {
@@ -118,76 +139,84 @@
   }
 
   .insurance-calculator__result {
-      display: flex;
-      justify-content: center;
-      color: darken($color: $green, $amount: 15%);
-      font-size: $font-size-large;
+    display: flex;
+    justify-content: center;
+    color: darken($color: $green, $amount: 15%);
+    font-size: $font-size-large;
 
-      p {
-        padding: 0 0 $m-size 0;
-        margin: 0;
-      }
+    p {
+      padding: 0 0 $m-size 0;
+      margin: 0;
+    }
   }
 }
 
 .insurance-motto {
-    background-color: $grey;
-    text-align: center;
-    color: $black;
-    font-weight: bold;
-    padding: $xl-size * 1.5 0 $m-size 0;
+  background-color: $grey;
+  text-align: center;
+  color: $black;
+  font-weight: bold;
+  padding: $xl-size * 1.5 0 $m-size 0;
 
-    h2 {
-        margin: 0;
-        font-size: $font-size-large;
-
-    }
+  h2 {
+    margin: 0;
+    font-size: $font-size-large;
+  }
 }
 
 .insurance-packages {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: $xl-size 0;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: $xl-size 0;
+  @media (max-width: 580px) {
+    display: block;
+}
 
-    .insurance-package-plan {
-        padding: $s-size;
-        width: 25%;
-        border-top: 1px solid black;
-        box-shadow: 7px 7px 23px 3px rgba(0,0,0,0.75);
+  .insurance-package-plan {
+    padding: $s-size;
+    width: 25%;
+    border-top: 1px solid black;
+    box-shadow: 7px 7px 23px 3px rgba(0, 0, 0, 0.75);
+    @media (max-width: 580px) {
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        text-align: center;
     }
+  }
 
-    .insurance-package-plan__title {
-        margin: 0;
-        color: $blue;
-        font-size: $font-size-large;
-    }
+  .insurance-package-plan__title {
+    margin: 0;
+    color: $blue;
+    font-size: $font-size-large;
+  }
 
-    .insurance-package-plan__subtitle {
-        margin: 0;
-        color: $grey;
-        font-size: $font-size-medium;
-    }
+  .insurance-package-plan__subtitle {
+    margin: 0;
+    color: $grey;
+    font-size: $font-size-medium;
+  }
 
-    .insurance-package-plan__features {
-        padding: 0;
-    }
+  .insurance-package-plan__features {
+    padding: 0;
+  }
 
-    .insurance-package-plan__feature {
-        list-style: none;
-    }
+  .insurance-package-plan__feature {
+    list-style: none;
+  }
 
-    .insurance-package-plan__feature-symbol {
-        color: $green;
-    }
+  .insurance-package-plan__feature-symbol {
+    color: $green;
+  }
 
-    .insurance-package-plan__benefits-title {
-        margin-bottom: 0;
-        font-size: $font-size-medium;
-    }
+  .insurance-package-plan__benefits-title {
+    margin-bottom: 0;
+    font-size: $font-size-medium;
+  }
 
-    .insurance-package-plan__benefits-detail {
-        margin: 0 0 $s-size/2 0;
-        color: $grey;
-    }
+  .insurance-package-plan__benefits-detail {
+    margin: 0 0 $s-size/2 0;
+    color: $grey;
+  }
 }
