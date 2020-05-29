@@ -17,19 +17,17 @@ teamMembers.map((member, index) => {
 })
 
 document.getElementById(`team-member-1`).addEventListener('click', () => {
-    console.log('click')
     const p = document.getElementById(`quote1`)
     const quote = getRandomChuckNorrisQuote(p)
 })
 
 document.getElementById(`team-member-2`).addEventListener('click', () => {
-    console.log('click')
     const p = document.getElementById(`quote2`)
     const quote = getRandomChuckNorrisQuote(p)
 })
 
 document.getElementById(`team-member-3`).addEventListener('click', () => {
-    console.log('click')
     const p = document.getElementById(`quote3`)
     const quote = getRandomChuckNorrisQuote(p)
 })
+
