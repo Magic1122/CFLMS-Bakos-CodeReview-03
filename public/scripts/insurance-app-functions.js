@@ -17,7 +17,7 @@ const calculateInsurance = (horsePower, age, country) => {
 }
 
 const generateResultDOM = (calculationResult, name, pElement) => {
-
+    
     if (typeof calculationResult !== 'number') {
         pElement.innerText = calculationResult
     } else {

@@ -93,6 +93,9 @@ body {
     margin: 0;
     font-size: 4.8rem;
     padding: 1.6rem; }
+    @media (max-width: 580px) {
+      .insurance-calculator .insurance-calculator__title {
+        text-align: center; } }
   .insurance-calculator .insurance-calculator__area {
     color: #171717;
     position: absolute;

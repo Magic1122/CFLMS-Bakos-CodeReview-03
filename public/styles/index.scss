@@ -19,6 +19,11 @@
     margin: 0;
     font-size: $font-size-large * 2;
     padding: $m-size;
+
+    @media (max-width: 580px) {
+        text-align: center;
+    }
+
   }
 
   .insurance-calculator__area {
