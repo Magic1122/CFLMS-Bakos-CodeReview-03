@@ -105,12 +105,6 @@ main {
   text-align: right;
   padding: 1.4rem; }
 
-#customer-2.team-member {
-  text-align: right; }
-
-#customer-2 .team-member__info {
-  text-align: left; }
-
 .team-member__name {
   margin: 0.2rem;
   color: #ff2727;

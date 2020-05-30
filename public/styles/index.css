@@ -81,7 +81,8 @@ body {
 .insurance-calculator {
   position: relative;
   height: 61rem;
-  background: url("../img/traffic-332857_1920.jpg") no-repeat center/cover; }
+  background: url("../img/traffic-332857_1920.jpg") no-repeat center/cover;
+  /* I prefer to keep my media queries together with the original styles so it makes it easier to understand what is changing */ }
   @media (max-width: 810px) {
     .insurance-calculator {
       height: 85rem; } }

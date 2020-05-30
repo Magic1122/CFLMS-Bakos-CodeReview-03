@@ -1,6 +1,10 @@
+/* Looping through the teamMembers array, map is a newer ES6 function, as a first argument we get access to the individul item, as a second to the index */
+
 teamMembers.map((member, index) => {
 
     const div = document.getElementById('team')
+
+    /* Generating the html structure */
 
     div.innerHTML +=
         `<div class="team-member" id="team-member-${index + 1}">
@@ -15,6 +19,8 @@ teamMembers.map((member, index) => {
     </div>
 </div>`
 })
+
+/* Adding event listener to each individual member */
 
 document.getElementById(`team-member-1`).addEventListener('click', () => {
     const p = document.getElementById(`quote1`)

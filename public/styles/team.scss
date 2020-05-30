@@ -35,14 +35,6 @@ main {
   padding: $s-size;
 }
 
-#customer-2.team-member {
-  text-align: right;
-}
-
-#customer-2 .team-member__info {
-  text-align: left;
-}
-
 .team-member__name {
   margin: 0.2rem;
   color: darken($color: $light-rose, $amount: 40%);
