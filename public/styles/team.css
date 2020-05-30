@@ -94,7 +94,7 @@ main {
 #team-member-1:hover .team-member__image-container,
 #team-member-2:hover .team-member__image-container,
 #team-member-3:hover .team-member__image-container {
-  animation: flip-customer 1s ease-out forwards; }
+  animation: flip-team-member 1s ease-out forwards; }
 
 .team-member__image {
   width: 100%;
@@ -135,7 +135,7 @@ main {
 
   .team-member__info {
     width: 30%; } }
-@keyframes flip-customer {
+@keyframes flip-team-member {
   0% {
     transform: rotateY(0) skew(20deg); }
   50% {
