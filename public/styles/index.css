@@ -125,7 +125,6 @@ body {
     grid-row-gap: 3.2rem; }
     @media (max-width: 810px) {
       .insurance-calculator .insurance-calculator__form {
-        /* grid-template-columns: 1r; */
         grid-template-columns: 1fr;
         grid-template-areas: "name" "age" "country" "power" "button"; } }
   .insurance-calculator input,
