@@ -7,7 +7,7 @@ main {
 }
 
 .team-member {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .team-member__image-container {
@@ -18,8 +18,8 @@ main {
   overflow: hidden;
 }
 
-#team-member-1:hover .team-member__image-container, 
-#team-member-2:hover .team-member__image-container, 
+#team-member-1:hover .team-member__image-container,
+#team-member-2:hover .team-member__image-container,
 #team-member-3:hover .team-member__image-container {
   animation: flip-customer 1s ease-out forwards;
 }

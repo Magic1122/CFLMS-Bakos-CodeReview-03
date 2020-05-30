@@ -54,7 +54,6 @@
       justify-content: flex-end;
       margin: $s-size;
     }
-    
   }
 
   .main-footer-logo {
@@ -78,22 +77,20 @@
   .main-header__banner {
     display: none;
   }
-
 }
 
 @media (max-width: 580px) {
-
   .main-header {
     img {
       display: inline-block;
     }
   }
 
-  .main-nav__items .main-nav__item  {
+  .main-nav__items .main-nav__item {
     margin: 0 $s-size/2;
   }
 
-  .main-header, 
+  .main-header,
   .main-nav__items,
   .main-foooter-nav__items,
   .main-footer .main-footer-logo {

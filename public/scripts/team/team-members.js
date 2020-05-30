@@ -22,18 +22,16 @@ teamMembers.map((member, index) => {
 
 /* Adding event listener to each individual member */
 
-document.getElementById(`team-member-1`).addEventListener('click', () => {
-    const p = document.getElementById(`quote1`)
-    const quote = getRandomChuckNorrisQuote(p)
-})
+for (let i = 1; i <= 3; i++) {
 
-document.getElementById(`team-member-2`).addEventListener('click', () => {
-    const p = document.getElementById(`quote2`)
-    const quote = getRandomChuckNorrisQuote(p)
-})
-
-document.getElementById(`team-member-3`).addEventListener('click', () => {
-    const p = document.getElementById(`quote3`)
-    const quote = getRandomChuckNorrisQuote(p)
-})
+    document.getElementById(`team-member-${i}`).addEventListener('click', async () => {
+        const p = document.getElementById(`quote${i}`)
+        try {
+            const quote = await getRandomChuckNorrisQuote()
+            p.innerText = quote
+        } catch (e) {
+            p.innerText = 'The cat took your quote :-)'
+        }
+    })
+}
 

@@ -1,158 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>CodeReview 3</title>
-</head>
-    <header class="main-header">
-        <div>
-            <a href="index.html" class="main-header__logo">
-              <img src="./img/logo.png" alt="insurance CF - Your favorite insurance company" />
-            </a>
+  </head>
+  <header class="main-header">
+    <div>
+      <a href="index.html" class="main-header__logo">
+        <img
+          src="./img/logo.png"
+          alt="insurance CF - Your favorite insurance company"
+        />
+      </a>
+    </div>
+    <div class="main-header__banner">
+      <a
+        href="https://codefactory.wien/en/home-en/"
+        target="_blank"
+        class="main-header__logo"
+      >
+        <img
+          src="./img/banner.png"
+          alt="CodeFactory FSWD course - The best course in Vienna"
+        />
+      </a>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <ul class="main-nav__items">
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="index.html">Home</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="team.html">Team</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="content">
+    <section class="insurance-calculator">
+      <h1 class="insurance-calculator__title">Car insurance</h1>
+      <div class="insurance-calculator__area">
+        <h1 class="insurance-calculator__area-title">
+          Great coverage begins
+          <br />
+          with a custom quote
+        </h1>
+        <form class="insurance-calculator__form" id="calculateForm">
+          <div class="insurance-calculator__form-name">
+            <label for="name">
+              Your name:
+            </label>
+            <br />
+            <input
+              type="text"
+              placeholder="What is your name?"
+              name="name"
+              id="name"
+              required
+            />
           </div>
-          <div class="main-header__banner">
-            <a href="https://codefactory.wien/en/home-en/" target="_blank" class="main-header__logo">
-              <img src="./img/banner.png" alt="CodeFactory FSWD course - The best course in Vienna" />
-            </a>
+          <div class="insurance-calculator__form-age">
+            <label for="age">
+              Age:
+            </label>
+            <br />
+            <input
+              type="number"
+              placeholder="How old are you?"
+              name="age"
+              id="age"
+              pattern="[1-9][0-9]*"
+              required
+            />
           </div>
-    </header>
-    <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Home</a>
+          <div class="insurance-calculator__form-country">
+            <label for="country">
+              Country:
+            </label>
+            <br />
+            <select name="country" id="country" required>
+              <option value="">Choose your country</option>
+              <option value="austria">Austria</option>
+              <option value="greece">Greece</option>
+              <option value="hungary">Hungary</option>
+            </select>
+          </div>
+          <div class="insurance-calculator__form-power">
+            <label for="power">
+              Horsepower of your car:
+            </label>
+            <br />
+            <input
+              type="number"
+              placeholder="How strong is your car?"
+              name="power"
+              id="power"
+              required
+              pattern="[1-9][0-9]*"
+            />
+          </div>
+          <div class="insurance-calculator__form-button">
+            <button type="submit">Calculate</button>
+          </div>
+        </form>
+        <div class="insurance-calculator__result">
+          <p id="insuranceResult">Your result will be shown here!</p>
+        </div>
+      </div>
+    </section>
+    <section class="insurance-motto">
+      <h2 class="insurance-motto__title">
+        Un-complicating car coverage
+      </h2>
+      <p class="insurance-motto__paragraph">
+        Understanding your coverage options shouldn't be so hard.
+        <br />
+        We'll guide you through available coverage types,
+        <br />
+        starting with who and what is covered.
+      </p>
+    </section>
+    <section class="insurance-packages">
+      <article class="insurance-package-plan">
+        <h1 class="insurance-package-plan__title">What comes standard</h1>
+        <h2 class="insurance-package-plan__subtitle">The coverage you need</h2>
+        <ul class="insurance-package-plan__features">
+          <li class="insurance-package-plan__feature">
+            <span class="insurance-package-plan__feature-symbol">✔</span> Bodily
+            Unjury Liability
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="team.html">Team</a>
+          <li class="insurance-package-plan__feature">
+            <span class="insurance-package-plan__feature-symbol">✔</span>
+            Property Damage
+          </li>
+          <li class="insurance-package-plan__feature">
+            <span class="insurance-package-plan__feature-symbol">✔</span>
+            Medical Payments
           </li>
         </ul>
-      </nav>
-      <main class="content">
-          <section class="insurance-calculator">
-              <h1 class="insurance-calculator__title">Car insurance</h1>
-              <div class="insurance-calculator__area">
-                  <h1 class="insurance-calculator__area-title">
-                      Great coverage begins
-                      <br> 
-                      with a custom quote
-                  </h1>
-                  <form class="insurance-calculator__form" id="calculateForm">
-                      <div class="insurance-calculator__form-name">
-                          <label for="name">
-                              Your name:
-                          </label>
-                          <br>
-                          <input type="text" placeholder="What is your name?" name="name" id="name" required>
-                      </div>
-                      <div class="insurance-calculator__form-age">
-                        <label for="age">
-                            Age:
-                        </label>
-                        <br>
-                        <input type="number" placeholder="How old are you?" name="age" id="age" pattern="[1-9][0-9]*" required>
-                      </div>
-                      <div class="insurance-calculator__form-country">
-                        <label for="country">
-                            Country:
-                        </label>
-                        <br>
-                        <select name="country" id="country" required>
-                            <option value="">Choose your country</option>
-                            <option value="austria">Austria</option>
-                            <option value="greece">Greece</option>
-                            <option value="hungary">Hungary</option>
-                        </select>
-                      </div>
-                      <div class="insurance-calculator__form-power">
-                        <label for="power">
-                            Horsepower of your car:
-                        </label>
-                        <br>
-                        <input type="number" placeholder="How strong is your car?" name="power" id="power" required pattern="[1-9][0-9]*">
-                      </div>
-                      <div class="insurance-calculator__form-button">
-                        <button type="submit">Calculate</button>
-                      </div>
-                  </form>
-                  <div class="insurance-calculator__result">
-                      <p id="insuranceResult">Your result will be shown here!</p>
-                  </div>
-              </div>
-          </section>
-          <section class="insurance-motto">
-              <h2 class="insurance-motto__title">
-                  Un-complicating car coverage
-              </h2>
-              <p class="insurance-motto__paragraph">
-                  Understanding your coverage options shouldn't be so hard.
-                  <br>
-                  We'll guide you through available coverage types,
-                  <br>
-                  starting with who and what is covered.
-              </p>
-          </section>
-          <section class="insurance-packages">
-            <article class="insurance-package-plan">
-                <h1 class="insurance-package-plan__title">What comes standard</h1>
-                <h2 class="insurance-package-plan__subtitle">The coverage you need</h2>
-                <ul class="insurance-package-plan__features">
-                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Bodily Unjury Liability</li>
-                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Property Damage</li>
-                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Medical Payments</li>
-                </ul>
-                <div class="insurance-package-plan__benefits">
-                    <h1 class="insurance-package-plan__benefits-title">
-                        Benefits
-                    </h1>
-                    <p class="insurance-package-plan__benefits-detail">
-                        12-month rate guarantee | 24/7 customer<br>service | Lifetime Repair Guarantee
-                    </p>
-                </div>
-            </article>
-            <article class="insurance-package-plan">
-                <h1 class="insurance-package-plan__title">Add-on protection & coverage</h1>
-                <h2 class="insurance-package-plan__subtitle">For more peace of mind</h2>
-                <ul class="insurance-package-plan__features">
-                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Better Car Replacement</li>
-                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Towing and Labor</li>
-                    <li class="insurance-package-plan__feature"><span class="insurance-package-plan__feature-symbol">✔</span> Rental Car Coverage</li>
-                </ul>
-                <div class="insurance-package-plan__benefits">
-                    <h1 class="insurance-package-plan__benefits-title">
-                        Earned Benefits
-                    </h1>
-                    <p class="insurance-package-plan__benefits-detail">
-                        Accident Forgiveness&#185; | New Car<br>Replacement&#8482;
-                    </p>
-                </div>
-            </article>
-          </section>
-      </main>
-      <footer class="main-footer">
-        <nav class="main-foooter-nav">
-          <ul class="main-foooter-nav__items">
-            <li class="main-foooter-nav__item">
-              <a class="main-footer-nav__link" href="index.html">Home</a>
-            </li>
-            <li class="main-foooter-nav__item">
-              <a class="main-footer-nav__link" href="team.html">Team</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="main-footer-logo">
-          <a href="index.html">
-            <img src="./img/logo-inv.png" alt="insurance CF - Your favorite insurance company" />
-          </a>
+        <div class="insurance-package-plan__benefits">
+          <h1 class="insurance-package-plan__benefits-title">
+            Benefits
+          </h1>
+          <p class="insurance-package-plan__benefits-detail">
+            12-month rate guarantee | 24/7 customer<br />service | Lifetime
+            Repair Guarantee
+          </p>
         </div>
-        <div class="main-footer-credits">
-          <p>Balint Bakos - CodeFactory 2020</p>
+      </article>
+      <article class="insurance-package-plan">
+        <h1 class="insurance-package-plan__title">
+          Add-on protection & coverage
+        </h1>
+        <h2 class="insurance-package-plan__subtitle">For more peace of mind</h2>
+        <ul class="insurance-package-plan__features">
+          <li class="insurance-package-plan__feature">
+            <span class="insurance-package-plan__feature-symbol">✔</span> Better
+            Car Replacement
+          </li>
+          <li class="insurance-package-plan__feature">
+            <span class="insurance-package-plan__feature-symbol">✔</span> Towing
+            and Labor
+          </li>
+          <li class="insurance-package-plan__feature">
+            <span class="insurance-package-plan__feature-symbol">✔</span> Rental
+            Car Coverage
+          </li>
+        </ul>
+        <div class="insurance-package-plan__benefits">
+          <h1 class="insurance-package-plan__benefits-title">
+            Earned Benefits
+          </h1>
+          <p class="insurance-package-plan__benefits-detail">
+            Accident Forgiveness&#185; | New Car<br />Replacement&#8482;
+          </p>
         </div>
-      </footer>
+      </article>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <nav class="main-foooter-nav">
+      <ul class="main-foooter-nav__items">
+        <li class="main-foooter-nav__item">
+          <a class="main-footer-nav__link" href="index.html">Home</a>
+        </li>
+        <li class="main-foooter-nav__item">
+          <a class="main-footer-nav__link" href="team.html">Team</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-footer-logo">
+      <a href="index.html">
+        <img
+          src="./img/logo-inv.png"
+          alt="insurance CF - Your favorite insurance company"
+        />
+      </a>
+    </div>
+    <div class="main-footer-credits">
+      <p>Balint Bakos - CodeFactory 2020</p>
+    </div>
+  </footer>
 
-<body>
+  <body>
     <script src="./scripts/isurance/insurance-app-functions.js"></script>
     <script src="./scripts/isurance/insurance-app.js"></script>
-</body>
+  </body>
 </html>

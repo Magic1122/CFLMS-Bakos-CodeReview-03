@@ -13,7 +13,7 @@ body {
 
 .main-header {
   width: 100%;
-  background: #FFF3F3;
+  background: #fff3f3;
   padding: 1.4rem;
   display: flex;
   align-items: center;
@@ -24,14 +24,14 @@ body {
 .main-nav__items, .main-footer .main-foooter-nav__items {
   margin: 0;
   padding: 0;
-  background: #8E1616;
+  background: #8e1616;
   list-style: none;
   display: flex; }
   .main-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-nav__item, .main-footer .main-foooter-nav__items .main-foooter-nav__item {
     margin: 0 0 0 1.4rem; }
   .main-nav__items .main-nav__item-link, .main-footer .main-foooter-nav__items .main-nav__item-link, .main-footer .main-foooter-nav__items .main-foooter-nav__item .main-footer-nav__link {
     text-decoration: none;
-    color: #FFF3F3;
+    color: #fff3f3;
     font-size: 1.8rem;
     font-weight: bold; }
 
@@ -113,7 +113,7 @@ main {
 .team-member__subtitle {
   margin: 0;
   font-size: 1.8rem;
-  color: #CECECE; }
+  color: #cecece; }
 
 .team-member__subtitle a:hover,
 .team-member__subtitle a:active {

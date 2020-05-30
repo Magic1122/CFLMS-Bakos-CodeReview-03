@@ -3,7 +3,7 @@
 const calculateInsurance = (horsePower, age, country) => {
     let insurance = ''
 
-    if (horsePower < 40 || age < 18 ) {
+    if (horsePower < 40 || age < 18) {
         return `The minimum age to make an insurance is 18 and your car can not be weaker than 40HP.`
     }
 
@@ -21,7 +21,7 @@ const calculateInsurance = (horsePower, age, country) => {
 /* Shows our result to the user */
 
 const generateResultDOM = (calculationResult, name, pElement) => {
-    
+
     if (typeof calculationResult !== 'number') {
         pElement.innerText = calculationResult
     } else {

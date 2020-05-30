@@ -2,8 +2,6 @@
 @import "./base/base";
 @import "./partials/shared";
 
-
-
 .insurance-calculator {
   position: relative;
   height: 61rem;
@@ -12,10 +10,10 @@
   /* I prefer to keep my media queries together with the original styles so it makes it easier to understand what is changing */
 
   @media (max-width: 810px) {
-      height: 85rem;
-    }   
+    height: 85rem;
+  }
   @media (max-width: 580px) {
-      height: 100rem;
+    height: 100rem;
   }
 
   .insurance-calculator__title {
@@ -25,9 +23,8 @@
     padding: $m-size;
 
     @media (max-width: 580px) {
-        text-align: center;
+      text-align: center;
     }
-
   }
 
   .insurance-calculator__area {
@@ -44,7 +41,7 @@
     border-radius: 2px;
 
     @media (max-width: 580px) {
-        max-width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -167,7 +164,7 @@
   color: $black;
   font-weight: bold;
   padding: $xl-size * 1.5 0 $m-size 0;
-  
+
   @media (max-width: 580px) {
     padding: $m-size $l-size;
   }
@@ -185,7 +182,7 @@
   margin: $xl-size 0;
   @media (max-width: 580px) {
     display: block;
-}
+  }
 
   .insurance-package-plan {
     padding: $s-size;
@@ -193,10 +190,10 @@
     border-top: 1px solid black;
     box-shadow: 7px 7px 23px 3px rgba(0, 0, 0, 0.75);
     @media (max-width: 580px) {
-        width: 100%;
-        box-shadow: none;
-        border: none;
-        text-align: center;
+      width: 100%;
+      box-shadow: none;
+      border: none;
+      text-align: center;
     }
   }
 
